@@ -1,0 +1,26 @@
+.collapse {
+    width: 80%;
+    border-radius: 5px;
+    overflow: hidden;
+
+}
+
+.collapse-button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    background-color: #FF6060;
+    cursor: pointer;
+    border-radius: 5px;
+    height: 47px;
+}
+
+.collapse-button h2 {
+    padding-left: 20px;
+    font-size: 18px;
+}
+
+.collapse-button img {
+    padding-right: 9px;
+}

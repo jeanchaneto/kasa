@@ -1,0 +1,39 @@
+.title-location-host-container {
+    display: flex;
+    padding-top: 30px;
+    justify-content: space-between;
+    padding-bottom: 10px;
+}
+
+.title-location-host-container h1 {
+    font-size: 36px;
+
+}
+
+.title-location-host-container p {
+    font-size: 18px;
+
+}
+
+.host-container {
+    display: flex;
+    
+}
+
+.host-container h2 {
+    font-size: 18px;
+   padding-right: 10px;
+
+}
+
+.host-container img{
+    border-radius: 50%;
+    width: 64px;
+    height: 64px;
+}
+
+.tags-rating-container{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 24px;
+}

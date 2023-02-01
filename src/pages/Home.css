@@ -8,3 +8,20 @@
     margin-bottom: 43px;
     border-radius: 25px;
 }
+
+@media screen and (max-width: 1240px) {
+
+    .accommodations-gallery{
+        grid-template-columns: 1fr 1fr;
+    }
+   
+  }
+
+  @media screen and (max-width: 900px) {
+
+    .accommodations-gallery{
+        grid-template-columns: 1fr;
+    }
+   
+  }
+

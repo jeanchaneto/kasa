@@ -1,3 +1,4 @@
+import "./Collapse.css";
 import { useState } from "react";
 import arrowUp from "../assets/arrow_up.png";
 import arrowDown from "../assets/arrow_down.png";
@@ -13,7 +14,7 @@ const Collapse = ({ title, content }) => {
   } else if (Array.isArray(content)) {
     collapseContent = content.map((item) => {
       return (
-          <p key={item}>{item}</p>
+        <p key={item}>{item}</p>
       )
     });
   }
@@ -23,13 +24,16 @@ const Collapse = ({ title, content }) => {
   }
 
   return (
-    <div>
+    <div className="collapse" >
 
-      <button onClick={toggle}>
-        {title}
+      <div className="collapse-button"
+        onClick={toggle}>
+        <h2>
+          {title}
+        </h2>
         {open && <img src={arrowUp} alt="Arrow up" />}
         {!open && <img src={arrowDown} alt="Arrow down" />}
-      </button>
+      </div>
 
       {open && typeof content === "string" && <div>
         <p>{collapseContent}</p>
@@ -37,7 +41,7 @@ const Collapse = ({ title, content }) => {
 
       {open && Array.isArray(content) && <div>
         {collapseContent}
-      </div> }
+      </div>}
     </div>
   )
 }

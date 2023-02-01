@@ -1,0 +1,34 @@
+.carousel {
+    height: 415px;
+    width: 100%;
+    position: relative;
+    border-radius: 25px;
+    overflow: hidden;
+}
+
+.carousel-picture-container {
+    height: 100%;
+    width: 100%;
+}
+
+.carousel-picture-container>img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.prev-arrow{
+    top: 50%;
+    transform: translateY(-50%);
+    position: absolute;
+    left: 23px;
+    cursor: pointer;
+}
+
+.next-arrow{
+    top: 50%;
+    transform: translateY(-50%);
+    position: absolute;
+    right: 23px;
+    cursor: pointer;
+}

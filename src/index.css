@@ -3,6 +3,7 @@ body {
   font-family: 'Montserrat', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  color: #FF6060;
 }
 
 code {
@@ -13,4 +14,19 @@ code {
 a {
   color: inherit; 
   text-decoration: inherit; 
+}
+
+h1 {
+  margin: 0;
+  font-weight: 500;
+}
+
+h2 {
+  margin: 0;
+  font-weight: 500;
+}
+
+p {
+  margin: 0;
+  font-weight: 500;
 }
