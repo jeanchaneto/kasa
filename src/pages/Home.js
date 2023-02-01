@@ -1,15 +1,26 @@
 import './Home.css';
 import hero_banner from '../assets/hero_banner.jpg';
-import data from '../accommodations.json';
+
 import { Card } from '../components/Card';
 import { Link } from 'react-router-dom';
-import { useState } from 'react';
+import { useEffect, useState  } from 'react';
 import { Banner } from '../components/Banner';
-
 
 export const Home = () => {
 
-    const [accommodations, setAccommodations] = useState(data)
+    const [accommodations, setAccommodations] = useState(null)
+
+    useEffect(() => {
+        fetch('/accommodations.json')
+            .then(r => r.json())
+            .then((data) => {
+                setAccommodations(data)
+            })
+    }, [])
+
+    if(!accommodations){
+        return null;
+    }
 
     return (
         <div>

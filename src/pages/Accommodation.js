@@ -1,15 +1,27 @@
 import { useParams } from "react-router-dom";
-import accommodations from '../accommodations.json';
 import { Carousel } from "../components/Carousel";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Rating } from "../components/Rating";
 import { Collapse } from "../components/Collapse";
 import { Tags } from "../components/Tags";
 
 export const Accommodation = () => {
     const { id } = useParams();
-    const [accommodationData, setAccomodationData] = useState(accommodations.find((accommodation) => accommodation.id === id)
-    )
+    const [accommodationData, setAccommodationData] = useState(null)
+
+
+    useEffect(() => {
+        fetch('/accommodations.json')
+            .then(r => r.json())
+            .then((data) => {
+                setAccommodationData(data.find((accommodation) => accommodation.id === id))
+            })
+    }, [])
+
+    if(!accommodationData){
+        return null;
+    }
+
 
     const { title, pictures, description, host, rating, location, equipments, tags } = accommodationData;
 
