@@ -1,8 +1,8 @@
 import aboutImage from '../assets/about_image.jpg'
-import { Banner } from '../components/Banner'
-import { Collapse } from '../components/Collapse'
+import  Banner  from '../components/Banner'
+import  Collapse  from '../components/Collapse'
 
-export const About = () => {
+ const About = () => {
     return (
       <main>
         <Banner picture={aboutImage}/>
@@ -14,3 +14,4 @@ export const About = () => {
     )
   }
   
+  export default About;

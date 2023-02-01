@@ -1,6 +1,6 @@
 import logo from '../assets/footer_logo.png';
 
-export const Footer = () => {
+const Footer = () => {
   return (
     <footer style={{backgroundColor: "black"}}>
         <img src={logo} alt="Kasa logo" />
@@ -8,3 +8,5 @@ export const Footer = () => {
     </footer>
   )
 }
+
+export default Footer;

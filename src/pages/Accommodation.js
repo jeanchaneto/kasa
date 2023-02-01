@@ -1,11 +1,11 @@
 import { useParams } from "react-router-dom";
-import { Carousel } from "../components/Carousel";
+import  Carousel  from "../components/Carousel";
 import { useEffect, useState } from "react";
-import { Rating } from "../components/Rating";
-import { Collapse } from "../components/Collapse";
-import { Tags } from "../components/Tags";
+import  Rating  from "../components/Rating";
+import  Collapse  from "../components/Collapse";
+import  Tags  from "../components/Tags";
 
-export const Accommodation = () => {
+const Accommodation = () => {
     const { id } = useParams();
     const [accommodationData, setAccommodationData] = useState(null)
 
@@ -51,3 +51,5 @@ export const Accommodation = () => {
         </main>
     )
 }
+
+export  default Accommodation;

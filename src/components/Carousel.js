@@ -3,7 +3,7 @@ import arrowBack from '../assets/arrow_back_ios-24px 1.png';
 import arrowNext from '../assets/arrow_forward_ios-24px 1.png';
 
 
-export const Carousel = ({ pictures, title, }) => {
+const Carousel = ({ pictures, title, }) => {
   const [currentIndex, setCurrentIndex] = useState(0)
 
   const handlePrev = () => {
@@ -30,3 +30,5 @@ export const Carousel = ({ pictures, title, }) => {
     </div>
   )
 }
+
+export default Carousel;

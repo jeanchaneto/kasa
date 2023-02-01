@@ -1,6 +1,6 @@
 
 
-export const Tags = ({ tags }) => {
+const Tags = ({ tags }) => {
     return (
         <div className="tags">
             {tags.map(tag => {
@@ -13,3 +13,5 @@ export const Tags = ({ tags }) => {
         </div>
     )
 }
+
+export default Tags;

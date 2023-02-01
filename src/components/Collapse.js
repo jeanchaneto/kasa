@@ -3,7 +3,7 @@ import arrowUp from "../assets/arrow_up.png";
 import arrowDown from "../assets/arrow_down.png";
 
 
-export const Collapse = ({ title, content }) => {
+const Collapse = ({ title, content }) => {
 
   const [open, setOpen] = useState(false);
 
@@ -41,3 +41,5 @@ export const Collapse = ({ title, content }) => {
     </div>
   )
 }
+
+export default Collapse;

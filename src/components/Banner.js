@@ -1,6 +1,6 @@
 import "./Banner.css";
 
-export const Banner = ({ text, picture }) => {
+const Banner = ({ text, picture }) => {
     return (
       <div className='banner'> 
         <img src={picture} alt="Banner" className="banner-picture"/>
@@ -8,3 +8,5 @@ export const Banner = ({ text, picture }) => {
       </div>
     );
   };
+
+  export default Banner;

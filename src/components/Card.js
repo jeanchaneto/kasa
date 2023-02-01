@@ -1,6 +1,6 @@
 
 
-export const Card = ({cover, title}) => {
+const Card = ({cover, title}) => {
   return (
     <div className="card">
         <img src={cover} alt={title} />
@@ -8,3 +8,5 @@ export const Card = ({cover, title}) => {
     </div>
   )
 }
+
+export default Card;

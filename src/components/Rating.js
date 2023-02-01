@@ -1,7 +1,7 @@
 import filledStar from "../assets/filled_star.png";
 import emptyStar from "../assets/empty_star.png";
 
-export const Rating = ({ rating }) => {
+const Rating = ({ rating }) => {
   const ratingStars = [];
 
   for (let i = 0; i < rating; i++) {
@@ -18,3 +18,5 @@ export const Rating = ({ rating }) => {
     </div>
   )
 }
+
+export default Rating;

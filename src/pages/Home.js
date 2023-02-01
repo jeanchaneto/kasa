@@ -1,12 +1,11 @@
 import './Home.css';
 import hero_banner from '../assets/hero_banner.jpg';
-
-import { Card } from '../components/Card';
+import  Card  from '../components/Card';
 import { Link } from 'react-router-dom';
 import { useEffect, useState  } from 'react';
-import { Banner } from '../components/Banner';
+import  Banner from '../components/Banner';
 
-export const Home = () => {
+const Home = () => {
 
     const [accommodations, setAccommodations] = useState(null)
 
@@ -35,3 +34,5 @@ export const Home = () => {
         </div>
     )
 }
+
+export default Home;

@@ -1,9 +1,9 @@
 import "./Header.css";
-import { NavBar } from "./NavBar";
+import  NavBar from "./NavBar";
 import logo from '../assets/logo.png';
 import { NavLink } from "react-router-dom";
 
-export const Header = () => {
+const Header = () => {
     return (
         <header className="container">
             <NavLink to="/">
@@ -13,3 +13,6 @@ export const Header = () => {
         </header>
     )
 }
+
+
+export default Header;
