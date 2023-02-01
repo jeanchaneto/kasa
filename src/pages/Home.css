@@ -1,0 +1,10 @@
+.accommodations-gallery{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 60px;
+    padding: 56px 50px;
+    background-color: #F6F6F6;
+    margin-top: 43px;
+    margin-bottom: 43px;
+    border-radius: 25px;
+}

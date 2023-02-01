@@ -1,0 +1,23 @@
+.card {
+    height: 340px;
+    width: 340px;
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.card-image {
+   height: 100%;
+   object-fit: cover;
+}
+
+.card-text{
+    position: absolute;
+    top: 268px;
+    left: 20px;
+    margin: 0;
+    color: white;
+    z-index: 1;
+    font-size: 18px;
+    font-weight: 500;
+}
