@@ -1,4 +1,4 @@
-.accommodations-gallery{
+.accommodations-gallery {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 60px;
@@ -9,19 +9,29 @@
     border-radius: 25px;
 }
 
+.accommodations-gallery a {
+    display: block;
+}
+
 @media screen and (max-width: 1240px) {
 
-    .accommodations-gallery{
+    .accommodations-gallery {
         grid-template-columns: 1fr 1fr;
     }
-   
-  }
 
-  @media screen and (max-width: 900px) {
+}
 
-    .accommodations-gallery{
+@media screen and (max-width: 900px) {
+
+    .accommodations-gallery {
         grid-template-columns: 1fr;
+        background-color: white;
+        padding: 0 0;
+        width: 100%;
     }
-   
-  }
 
+    .accommodations-gallery a {
+        width: 100%;
+    }
+
+}

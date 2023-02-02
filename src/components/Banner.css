@@ -4,13 +4,14 @@
     background-color: black;
     position: relative;
     height: 223px;
+    text-align: left;
 }
 
 .banner-picture {
-object-fit: cover;
-height: 100%;
-width: 100%;
-opacity: 50%;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    opacity: 50%;
 }
 
 .banner-title {
@@ -18,9 +19,17 @@ opacity: 50%;
     color: white;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     font-size: 48px;
     font-weight: 500;
     margin: 0;
-   white-space: nowrap;
+    white-space: nowrap;
+}
+
+@media screen and (max-width: 900px) {
+    .banner-title {
+        font-size: 24px;
+        white-space: inherit;
+        width: 80%;
+    }
 }

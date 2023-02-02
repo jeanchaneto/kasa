@@ -22,3 +22,22 @@
     font-weight: 500;
     font-size: 18px;
 }
+
+@media screen and (max-width: 730px) {
+    .error-main{
+        padding-bottom: 100px;
+    }
+
+    .error-main h1 {
+        font-size: 96px;
+    }
+
+    .error-page-message{
+        font-size: 18px;
+        padding-bottom: 133px;
+    }
+
+    .error-main a {
+        font-size: 14px;
+    }
+}

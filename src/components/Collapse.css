@@ -40,3 +40,9 @@
     line-height: 143%;
     font-weight: 400;
 }
+
+@media screen and (max-width: 900px) {
+    .collapse {
+        width: 100%;
+    }
+}

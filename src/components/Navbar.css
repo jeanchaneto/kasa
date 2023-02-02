@@ -1,6 +1,7 @@
 nav {
     display: flex;
     align-items: center;
+    gap: 60px;
 }
 
 nav a {
@@ -13,6 +14,13 @@ nav a {
  text-decoration: underline;
 }
 
-.navbar-text {
-    padding-right: 60px;
+
+
+@media screen and (max-width: 580px) {
+    .main-logo{
+        height:47px;
+    }
+    .navbar-text {
+        font-size: 12px;
+    }
 }
