@@ -37,3 +37,9 @@
     justify-content: space-between;
     padding-bottom: 24px;
 }
+
+.description-equipments-container{
+    display: flex;
+    justify-content: space-between;
+    gap: 76px;
+}

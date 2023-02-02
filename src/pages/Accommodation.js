@@ -26,7 +26,7 @@ const Accommodation = () => {
     const { title, pictures, description, host, rating, location, equipments, tags } = accommodationData;
 
     return (
-        <main>
+        <main className="accomodation-main">
             <Carousel pictures={pictures} />
             <div className="title-location-host-container">
                 <div>

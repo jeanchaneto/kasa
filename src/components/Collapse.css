@@ -24,3 +24,19 @@
 .collapse-button img {
     padding-right: 9px;
 }
+
+.collapse-body {
+    background-color: #F6F6F6;
+    padding-top: 27px;
+    padding-right: 27px;
+    padding-left: 18px;
+    padding-bottom: 19px;
+    font-size: 18px;
+    font-weight: 400;
+    border-radius: 5px;
+}
+
+.equipments-body {
+    line-height: 143%;
+    font-weight: 400;
+}

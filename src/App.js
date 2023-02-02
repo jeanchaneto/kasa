@@ -11,7 +11,7 @@ function App() {
   return (
     <BrowserRouter>
     <Header ></Header>      
-      <main className="container">
+      <main className="container app-main">
         <Routes>
           <Route index element={<Home />} />
           <Route path="about" element={<About />} />

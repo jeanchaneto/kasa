@@ -35,11 +35,11 @@ const Collapse = ({ title, content }) => {
         {!open && <img src={arrowDown} alt="Arrow down" />}
       </div>
 
-      {open && typeof content === "string" && <div>
+      {open && typeof content === "string" && <div className="collapse-body">
         <p>{collapseContent}</p>
       </div>}
 
-      {open && Array.isArray(content) && <div>
+      {open && Array.isArray(content) && <div className="collapse-body equipments-body">
         {collapseContent}
       </div>}
     </div>
