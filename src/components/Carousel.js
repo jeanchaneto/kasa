@@ -24,13 +24,13 @@ const Carousel = ({ pictures, title, }) => {
             alt={title} />
         </div>
       ))}
-      {currentIndex !== 0 && pictures.length > 1 && (
+      {pictures.length > 1 && (
         <img src={arrowBack}
           alt="Previous arrow icon"
           onClick={handlePrev} 
           className='prev-arrow'/>
       )}
-      {currentIndex !== pictures.length - 1 && pictures.length > 1 && (
+      {pictures.length > 1 && (
         <img src={arrowNext}
           alt="Next arrow icon"
           onClick={handleNext} 
