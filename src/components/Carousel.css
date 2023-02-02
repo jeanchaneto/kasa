@@ -17,7 +17,7 @@
     height: 100%;
 }
 
-.prev-arrow{
+.prev-arrow {
     top: 50%;
     transform: translateY(-50%);
     position: absolute;
@@ -25,10 +25,24 @@
     cursor: pointer;
 }
 
-.next-arrow{
+.next-arrow {
     top: 50%;
     transform: translateY(-50%);
     position: absolute;
     right: 23px;
     cursor: pointer;
+}
+
+@media screen and (max-width: 750px) {
+    .carousel {
+        height: 250px;
+    }
+
+    .prev-arrow {
+        height: 20px;
+    }
+
+    .next-arrow {
+        height: 20px;
+    }
 }

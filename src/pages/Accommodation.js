@@ -28,20 +28,22 @@ const Accommodation = () => {
     return (
         <div className="accomodation-main">
             <Carousel pictures={pictures} />
-            <div className="title-location-host-container">
-                <div>
-                    <h1>{title}</h1>
-                    <p>{location}</p>
+            <div className="location-details-container">
+                <div className="title-tags-container">
+                    <div className="title-container">
+                        <h1>{title}</h1>
+                        <p>{location}</p>
+                    </div>
+                    <Tags tags={tags} />
                 </div>
-                <div className="host-container">
-                    <h2>{host.name}</h2>
-                    <img src={host.picture}
-                        alt={host.name} />
+                <div className= "host-rating-container">                  
+                    <div className="host-container">
+                        <h2>{host.name}</h2>
+                        <img src={host.picture}
+                            alt={host.name} />
+                    </div>
+                    <Rating rating={rating} />
                 </div>
-            </div>
-            <div className="tags-rating-container">
-                <Tags tags={tags} />
-                <Rating rating={rating} />
             </div>
             <div className="description-equipments-container">
                 <Collapse

@@ -3,7 +3,7 @@
     flex-direction: column;
     align-items: center;
     gap: 30px;
-    margin-bottom: 201px;
+    margin-bottom: 101px;
 }
 
 .about-main h2 {
@@ -17,5 +17,16 @@
 @media screen and (max-width: 900px) {
     .about-main {
         margin-bottom: 80px;
+    }
+
+}
+
+@media screen and (max-width: 580px) {
+    .about-main h2 {
+        font-size: 13px;
+    }
+
+    .about-main p {
+        font-size: 12px;
     }
 }

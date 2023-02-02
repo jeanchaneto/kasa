@@ -46,3 +46,12 @@
         width: 100%;
     }
 }
+
+@media screen and (max-width: 580px) {
+    .collapse-button h2 {
+        font-size: 13px;
+    }
+    .collapse-body{
+        font-size: 12px;
+    }
+  }
