@@ -5,6 +5,10 @@
     padding-bottom: 26px;
 }
 
+.accomodation-main{
+    min-height: calc(100vh - 473px);
+}
+
 .title-tags-container h1 {
     font-size: 36px;
 }

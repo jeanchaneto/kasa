@@ -4,6 +4,7 @@
     align-items: center;
     gap: 30px;
     margin-bottom: 101px;
+    min-height: calc(100vh - 574px);
 }
 
 .about-main h2 {
