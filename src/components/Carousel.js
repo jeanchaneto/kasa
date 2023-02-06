@@ -22,6 +22,7 @@ const Carousel = ({ pictures, title, }) => {
           key={id}>
           <img src={picture}
             alt={title} />
+            <p className='carousel-index'>{currentIndex + 1}/{pictures.length}</p>
         </div>
       ))}
       {pictures.length > 1 && (
@@ -30,6 +31,7 @@ const Carousel = ({ pictures, title, }) => {
           onClick={handlePrev} 
           className='prev-arrow'/>
       )}
+   
       {pictures.length > 1 && (
         <img src={arrowNext}
           alt="Next arrow icon"
